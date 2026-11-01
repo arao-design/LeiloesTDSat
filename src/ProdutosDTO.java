@@ -8,41 +8,21 @@
  * @author Adm
  */
 public class ProdutosDTO {
-    private Integer id;
+    private int id;
     private String nome;
-    private Integer valor;
+    private double valor; // <-- Certifique-se de que é double aqui
     private String status;
 
-    public Integer getId() {
-        return id;
-    }
+    // Getters e Setters
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
 
-    public String getNome() {
-        return nome;
-    }
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
 
-    public Integer getValor() {
-        return valor;
-    }
+    public double getValor() { return valor; } // <-- Retorna double
+    public void setValor(double valor) { this.valor = valor; } // <-- Recebe double
 
-    public String getStatus() {
-        return status;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setValor(Integer valor) {
-        this.valor = valor;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-    
+    public String getStatus() { return status; }
+    public void setStatus(String status) { this.status = status; }
 }
